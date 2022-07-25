@@ -1,0 +1,19 @@
+{
+   "Debug": true,
+   "Server": {
+      "Address": ":9090"
+   },
+   "Log": {
+      "Path": "log/akawork",
+      "Prefix": "backend-arrow-service",
+      "Description": "Must have folder log/akawork inside "
+   },
+   "Context": {
+      "Timeout": 5
+   },
+   "Redis": {
+      "PoolSize": 1000,
+      "MinIdleConns": 10,
+      "DB": 0
+   }
+}
