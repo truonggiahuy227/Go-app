@@ -1,0 +1,21 @@
+version: '2.12.2'
+
+services: 
+    goapp:
+        image: go-app
+        build: .
+        command: '-d --rm --name go-app'
+        ports:
+            - "80:9090"
+        restart: always
+        environment:
+            REDIS_URL: '52.41.36.191:6379'
+        depends_on:
+            - "redisdb"
+    redisdb:
+        image: redis
+        build: .
+        command: '-d --rm --name redisdb'
+        ports:
+            - "6379:6379"
+        restart: always
