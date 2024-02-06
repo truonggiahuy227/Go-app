@@ -28,7 +28,7 @@ type HomePageController struct {
  */
 func (controller *HomePageController) Greeting(c echo.Context) error {
 	vcolor := dto.ColorDto{}
-	vcolor.Flag = "Hello member of training Docker, K8s organize by DSC Technical Team!!!!!!"
+	vcolor.Flag = "Hello member of training Docker, K8s organize by xPlat Team!!!!!!"
 	return controller.WriteSuccess(c, vcolor)
 }
 
@@ -61,7 +61,7 @@ func (controller *HomePageController) Communicate(c echo.Context) error {
 
 	// Step 2
 	vcolor := dto.ColorDto{}
-	vcolor.Flag = "Hello member of training Docker, K8s organize by DSC Technical Team!!!!!!"
+	vcolor.Flag = "Hello member of training Docker, K8s organize by xPlat Team!!!!!!"
 	return controller.WriteSuccess(c, vcolor)
 
 	// Step 3
@@ -80,7 +80,7 @@ func (controller *HomePageController) Parent(c echo.Context) error {
 
 	// Step 2
 	vcolor := dto.ColorDto{}
-	vcolor.Flag = "Hello member of training Docker, K8s organize by DSC Technical Team!!!!!!"
+	vcolor.Flag = "Hello member of training Docker, K8s organize by xPlat Team!!!!!!"
 	return controller.WriteSuccess(c, vcolor)
 
 	// Step 3
