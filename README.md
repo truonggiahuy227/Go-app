@@ -32,7 +32,7 @@ ____________________________________O/_______
 Go to Browser with [this link](http://localhost:9090/arrow/api/v1.0/greeting) for check web working:
 
 Output:
-<pre><code>{"Message":"Success","Data":{"Color":"Hello member of training Docker, K8s organize by DSC Technical Team!!!!!!"}}
+<pre><code>{"Message":"Success","Data":{"Color":"Hello member of training Docker, K8s organize by xPlat Team!!!!!!"}}
 </code></pre>
 
 Require for tranning Docker
@@ -43,9 +43,11 @@ Require for tranning Docker
   Bad Answer: Good luck to you next time!!!!!!
   
   Good Answer: Congratulation!!!!!!
+
+## Optional 
 - 3. Need to connect with another container Redis Server (API: is working)
   + First run Redis container with command:
   + Next, Add Redis URL to REDIS_URL env in Docker image env
   + Check by call to [API](http://localhost:9090/arrow/api/v1.0/communicate)
-    + Good Result: {"Message":"Success","Data":{"Flag":"2022"}}
+    + Good Result: {"Message":"Success","Data":{"Flag":"2024"}}
     + Bad Result: {"Message":"Success","Data":{"Flag":""}}
